@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/night_room"
+    tools:context="org.androidtown.login.MapFragmentActivityForSearch"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map_fragment"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        app:navermap_extent="31.43,122.37,44.35,132"
+        app:navermap_latitude="37.3595963"
+        app:navermap_locationButtonEnabled="true"
+        app:navermap_longitude="127.1054328"
+        app:navermap_tilt="40"
+        app:navermap_zoom="10" />
+
+    <ImageButton
+        android:id="@+id/finish_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_custom_circle"
+        android:src="@drawable/ok" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_fragment"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/finish_button"
+        android:background="@drawable/background_custom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ll0tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/content_color"/>
+            </LinearLayout>
+
+            <View android:id="@+id/line1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="280dp"
+                android:layout_height="1dp"
+                android:paddingVertical="8dp"
+                android:background="@color/content_color"/>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ll1tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/content_color"/>
+            </LinearLayout>
+
+            <View android:id="@+id/line2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="280dp"
+                android:layout_height="1dp"
+                android:paddingVertical="8dp"
+                android:background="@color/content_color"/>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ll2tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/content_color"/>
+            </LinearLayout>
+
+            <View android:id="@+id/line3"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="280dp"
+                android:layout_height="1dp"
+                android:paddingVertical="8dp"
+                android:background="@color/content_color"/>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ll3tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/content_color"/>
+            </LinearLayout>
+
+            <View android:id="@+id/line4"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="280dp"
+                android:layout_height="1dp"
+                android:paddingVertical="8dp"
+                android:background="@color/content_color"/>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ll4tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/content_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

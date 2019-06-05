@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".room"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "제목"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/title"
+        style="@style/CustomText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/l1"
+            android:gravity="right"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/location"
+                android:background="@drawable/custom_button"
+                android:src="@drawable/ic_magnify_black_48dp"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/exit"
+                android:background="@drawable/custom_button"
+                android:src="@drawable/ic_arrow_left_black_48dp"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/fsubmit"
+                android:background="@drawable/custom_button"
+                android:src="@drawable/ic_person_add_black_24dp"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/l1"
+                android:id="@+id/l2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:text="인원"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="num"
+                    android:id="@+id/num"/>
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#46BBB7B7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/l3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:text="날짜"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="date"
+                    android:id="@+id/date"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="place"
+                    android:id="@+id/place"/>
+
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#46BBB7B7"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/l4"
+                android:text="댓글"
+                android:textSize="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#46BBB7B7"/>
+        <ListView
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="443dp"
+            android:divider="#fff" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:layout_gravity="left"
+        android:hint="Write a message..."/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/submit"
+        android:layout_weight="1"
+        android:background="@drawable/custom_button"
+        android:src="@drawable/send_black"/>
+</LinearLayout>
+
+</LinearLayout>

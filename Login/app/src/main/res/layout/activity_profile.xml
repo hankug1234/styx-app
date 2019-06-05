@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:orientation="vertical"
+    android:background="@drawable/night_room"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="15dp"
+        android:id="@+id/box"
+        android:background="@color/background_color"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/fsubmit"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/content_color"
+            android:textColorHint="#6BFFD5D5"
+            android:backgroundTint="@color/content_color"
+            android:hint="친구추가"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_custom_circle"
+            android:id="@+id/fsubmit"
+            android:src="@drawable/add_group"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:id="@+id/friendlist">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

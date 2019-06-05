@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/night_room"
+    android:paddingTop="130dp"
+    android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_custom"
+            >
+
+            <TextView android:id="@+id/promiseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20pt"
+                android:textStyle="bold"
+                android:textColor="@color/content_color"
+                android:text=""/>
+
+
+
+            <View android:id="@+id/line1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/promiseTitle"
+                android:paddingVertical="15dp"
+                android:background="@color/content_color"/>
+
+            <ImageView android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/new_black"/>
+
+            <TextView android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/line1"
+                android:textSize="12pt"
+                android:textColor="@color/content_color"
+                android:text="제목설정"/>
+
+
+
+            <View android:id="@+id/line2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/title"
+                android:paddingVertical="15dp"
+                android:background="@color/content_color"/>
+
+
+
+            <ImageView android:id="@+id/placeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title"
+                android:layout_below="@+id/line2"
+                android:src="@drawable/location_color"
+                />
+
+            <TextView android:id="@+id/placeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/titleText"
+                android:layout_below="@+id/line2"
+                android:textSize="12pt"
+                android:textColor="@color/content_color"
+                android:text="장소설정"/>
+
+
+
+            <View android:id="@+id/line3"
+                android:layout_centerHorizontal="true"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/placeText"
+                android:paddingVertical="15dp"
+                android:background="@color/content_color"/>
+
+            <ImageView
+                android:id="@+id/dateImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_alignLeft="@+id/title"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/calendar_black" />
+
+            <TextView android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/titleText"
+                android:layout_below="@+id/line3"
+                android:textSize="12pt"
+                android:textColor="@color/content_color"
+                android:text="날짜설정"/>
+
+            <View android:id="@+id/line4"
+                android:layout_centerHorizontal="true"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/dateImage"
+                android:paddingVertical="15dp"
+                android:background="@color/content_color"/>
+
+            <ImageView android:id="@+id/timeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title"
+                android:layout_below="@+id/line4"
+                android:src="@drawable/clock_black"
+                />
+
+            <TextView android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/titleText"
+                android:layout_below="@+id/line4"
+                android:textSize="12pt"
+                android:textColor="@color/content_color"
+                android:text="시간설정"/>
+
+
+
+            <View android:id="@+id/line5"
+                android:layout_centerHorizontal="true"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/timeImage"
+                android:paddingVertical="15dp"
+                android:background="@color/content_color"/>
+
+            <ImageView android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title"
+                android:layout_below="@+id/line5"
+                android:src="@drawable/run_black"/>
+
+            <TextView android:id="@+id/spendingTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/titleText"
+                android:layout_below="@+id/line5"
+                android:textSize="12pt"
+                android:textColor="@color/content_color"
+                android:text="소요시간설정"/>
+
+
+
+            <View android:id="@+id/line6"
+                android:layout_centerHorizontal="true"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/startTime"
+                android:paddingVertical="15dp"
+                android:background="@color/content_color"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    <ImageButton android:id="@+id/finish"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_margin="40dp"
+        android:background="@drawable/button_custom_circle"
+        android:textColor="@color/content_color_h"
+        android:src="@drawable/ok"/>
+
+
+</LinearLayout>

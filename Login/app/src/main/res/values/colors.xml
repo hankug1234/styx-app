@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparentBlack">#96000000</color>
+    <color name="content_color">#FFD5D5</color>
+    <color name="content_stroke">#5EECDCFD</color>
+    <color name="background_color">#22FFD8D8</color>
+    <color name="background_stroke">#905A4E68</color>
+    <color name="content_color_p">#B591ECEC</color>
+    <color name="content_color_h">#B5532F63</color>
+    <color name="ItemSelectedColor">#FFD5D5</color>
+
+
+    <style name="CustomText"  parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:background">#B5532F63</item>
+
+    </style>
+</resources>

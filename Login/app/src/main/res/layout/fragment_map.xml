@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/night_room"
+    xmlns:tools="http://schemas.android.com/tools">
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_fragment"
+    android:name="com.naver.maps.map.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_alignParentTop="true"
+    app:navermap_extent="31.43,122.37,44.35,132"
+    app:navermap_latitude="37.3595963"
+    app:navermap_locationButtonEnabled="true"
+    app:navermap_longitude="127.1054328"
+    app:navermap_tilt="40"
+    app:navermap_zoom="10" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_fragment"
+        android:layout_toLeftOf="@+id/syn"></ListView>
+    <ImageButton android:id="@+id/syn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_custom_circle"
+        android:src="@drawable/ic_refresh_page_option"
+        android:layout_marginBottom="10dp"
+        />
+    <ImageButton android:id="@+id/promise"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/syn"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_custom_circle"
+        android:src="@drawable/ic_gps_fixed_indicator"
+        />
+
+
+
+</RelativeLayout>
